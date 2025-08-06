@@ -1,0 +1,96 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using MySql.Data.MySqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace stPatricksSys
+{
+    public partial class pass : Form
+    {
+        MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;database=school");
+        public pass()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            admindashboard newform = new admindashboard();
+            newform.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO pass (purpose) VALUES (@type)", conn);
+                int i;
+
+                cmd.Parameters.AddWithValue("@type", textBox1.Text);
+
+                i = cmd.ExecuteNonQuery();
+
+                if (i > 0)
+                {
+                    MessageBox.Show("Pass provided succesfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No pass provided!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            bindData();
+        }
+
+        private void pass_Load(object sender, EventArgs e)
+        {
+            bindData();
+        }
+        private void bindData()
+        {
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM pass", conn);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                dataGridView1.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            textBox1.Clear();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
+}

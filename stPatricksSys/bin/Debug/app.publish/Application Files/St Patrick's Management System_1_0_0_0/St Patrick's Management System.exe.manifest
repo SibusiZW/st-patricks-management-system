@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="St Patrick's Management System.exe" version="1.0.0.0" publicKeyToken="527328f6e795e9e6" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="clover.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="St Patrick's Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="St Patrick's Management System.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.9.9.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="St Patrick's Management System.exe" size="623616">
+      <assemblyIdentity name="St Patrick's Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rwPPEYdh+Q1dF6mG4CklxV+8Fh/DIzUDNcABUpdwmVI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="clover.ico" size="38078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JWJAOKUW4cGgAYsxFpTNfTzoBKhuCVjO0o6SzHM/5nE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="St Patrick's Management System.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SIBUSI\Tafadzwa" issuerKeyHash="b16bf1ed8acea8e81794505cd0b51977d5a5eee9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+Aq9jtgt5VUI5c2rT1PTrK+gN0fgo1txr/F5EaMcu8A=</DigestValue></Reference></SignedInfo><SignatureValue>DOECmMhSoMoPAF6ijUe7J1WaUT43E5x9atpKnQsykOv1rL7WGvqR+r4PrmkluSCa8EC9pcI8YkrYJHYmTjfzr18F2DV/xUrLpbNfZL26R2RCuRzhBdA6EbGbRjYCRONUqGSWg4Dv5wo6Twb7SkJ01rGFM39CuTcBsuNPPGjDaT8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qMHQOLHjrOSq3Rl0Vu0OjPOfLn6Ava0VeFBr1QHWpxqnzKpitCWHPfNqW018GelesUE4SP42BcFOZnJb0J8+bFGmcMIDJSuytZuDYQHkStSeNUoVNZ50X09PhgV87/e3OeRuH2t5P6scX/Rv7l2Y+eDW30mW4n1RyjoMHDNvUg0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c0bb1ca31179f1af715ba3e04737a0afacd3534fabcde50855e52dd88ebd0af8" Description="" Url=""><as:assemblyIdentity name="St Patrick's Management System.exe" version="1.0.0.0" publicKeyToken="527328f6e795e9e6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SIBUSI\Tafadzwa</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VHPjY+8OVBRruyoII4EzV4PSlO/Uo0571a91Ith9ER8=</DigestValue></Reference></SignedInfo><SignatureValue>UkXGHqbzpgnJGeKIYy8Kmn8bwXixum6f9ygcBemaEFKOE6zyZH2JV2rXj8sSvMwuc33boZq/zM2/pQlhmbDTqJ047HvbB/uxriRpb9Y2SDKROKrIFwmYfuUNyt2ZFUes5BmsEi/jeJBOU5qIiFFlO5uIbztJ0a8FSuxnYMxDq9U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qMHQOLHjrOSq3Rl0Vu0OjPOfLn6Ava0VeFBr1QHWpxqnzKpitCWHPfNqW018GelesUE4SP42BcFOZnJb0J8+bFGmcMIDJSuytZuDYQHkStSeNUoVNZ50X09PhgV87/e3OeRuH2t5P6scX/Rv7l2Y+eDW30mW4n1RyjoMHDNvUg0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQezvUU8RopLpKZEoZCxp9SjANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AUwBJAEIAVQBTAEkAXABUAGEAZgBhAGQAegB3AGEwHhcNMjUwNTEwMDkwNjA3WhcNMjYwNTEwMTUwNjA3WjApMScwJQYDVQQDHh4AUwBJAEIAVQBTAEkAXABUAGEAZgBhAGQAegB3AGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKjB0Dix46zkqt0ZdFbtDozzny5+gL2tFXhQa9UB1qcap8yqYrQlhz3zaltNfBnpXrFBOEj+NgXBTmZyW9CfPmxRpnDCAyUrsrWbg2EB5ErUnjVKFTWedF9PT4YFfO/3tznkbh9reT+rHF/0b+5dmPng1t9JluJ9Uco6DBwzb1INAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAAG4/ajb4YLfbawz2RmzPWExEkfu4ITy4DM/ZIvdJ55LeGU4GpZo6jvvZbryPj4Vl0ns46LeBI5uPta5jtTiZXOCFdSYobh/AXiSa1Fc5KmWiIl8qctJCab7JvqGsdl3qf5aaPXRZ6iLoBgIBFvJURjYTuhrv92OVOVzOeHXpoZw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
