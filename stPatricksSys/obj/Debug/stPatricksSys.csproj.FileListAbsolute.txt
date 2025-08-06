@@ -14,12 +14,12 @@ C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricks
 C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.pass.resources
 C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.users.resources
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form6.resources
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\St Patrick's Management System.exe.config
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\St Patrick's Management System.exe.manifest
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\St Patrick's Management System.application
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\St Patrick's Management System.exe
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\St Patrick's Management System.pdb
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\St Patrick's Management System.exe.manifest
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\St Patrick's Management System.application
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\St Patrick's Management System.exe
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\St Patrick's Management System.pdb
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.exe.config
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.exe.manifest
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.application
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.exe
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.pdb
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.exe.manifest
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.application
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.exe
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.pdb

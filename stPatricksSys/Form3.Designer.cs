@@ -60,15 +60,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.studentImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentImg)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(629, 460);
+            this.textBox2.Location = new System.Drawing.Point(770, 463);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(126, 22);
             this.textBox2.TabIndex = 49;
@@ -78,7 +83,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(629, 493);
+            this.textBox1.Location = new System.Drawing.Point(770, 496);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 22);
             this.textBox1.TabIndex = 48;
@@ -88,7 +93,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(387, 468);
+            this.label9.Location = new System.Drawing.Point(528, 471);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 47;
@@ -97,7 +102,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(387, 498);
+            this.label8.Location = new System.Drawing.Point(528, 501);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 17);
             this.label8.TabIndex = 46;
@@ -167,7 +172,7 @@
             this.btnExp.FlatAppearance.BorderSize = 0;
             this.btnExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExp.ForeColor = System.Drawing.Color.White;
-            this.btnExp.Location = new System.Drawing.Point(517, 97);
+            this.btnExp.Location = new System.Drawing.Point(667, 96);
             this.btnExp.Name = "btnExp";
             this.btnExp.Size = new System.Drawing.Size(195, 30);
             this.btnExp.TabIndex = 41;
@@ -341,7 +346,7 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(381, 144);
+            this.dataGridView1.Location = new System.Drawing.Point(531, 143);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(502, 309);
@@ -358,7 +363,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 79);
+            this.panel1.Size = new System.Drawing.Size(1038, 79);
             this.panel1.TabIndex = 50;
             // 
             // label12
@@ -378,7 +383,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Right;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(871, 0);
+            this.label10.Location = new System.Drawing.Point(1013, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(25, 28);
             this.label10.TabIndex = 2;
@@ -402,9 +407,9 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 518);
+            this.panel2.Location = new System.Drawing.Point(0, 542);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 47);
+            this.panel2.Size = new System.Drawing.Size(1038, 47);
             this.panel2.TabIndex = 51;
             // 
             // label13
@@ -418,13 +423,59 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Taking up the challenge";
             // 
+            // btnUpload
+            // 
+            this.btnUpload.BackColor = System.Drawing.Color.Lime;
+            this.btnUpload.FlatAppearance.BorderSize = 0;
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.ForeColor = System.Drawing.Color.White;
+            this.btnUpload.Location = new System.Drawing.Point(362, 369);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(158, 37);
+            this.btnUpload.TabIndex = 55;
+            this.btnUpload.Text = "Upload Image";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(384, 216);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(102, 17);
+            this.label15.TabIndex = 54;
+            this.label15.Text = "Student Picture";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(403, 185);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 17);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "Upload";
+            // 
+            // studentImg
+            // 
+            this.studentImg.Location = new System.Drawing.Point(362, 239);
+            this.studentImg.Name = "studentImg";
+            this.studentImg.Size = new System.Drawing.Size(158, 124);
+            this.studentImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.studentImg.TabIndex = 52;
+            this.studentImg.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(896, 565);
+            this.ClientSize = new System.Drawing.Size(1038, 589);
             this.ControlBox = false;
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.studentImg);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox2);
@@ -465,6 +516,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,5 +555,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox studentImg;
     }
 }

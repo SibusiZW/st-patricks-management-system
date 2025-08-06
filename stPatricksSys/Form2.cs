@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,10 +58,15 @@ namespace stPatricksSys
             txtDOB.Clear();
             txtSch.SelectedIndex = 0;
             txtMob.Clear();
+            studentImg.Image = null;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //studentImg.Image?.Dispose();
+            byte[] imageBytes = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
+            MemoryStream mstream = new MemoryStream(imageBytes);
+
             txtID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtGen.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -68,6 +74,8 @@ namespace stPatricksSys
             txtDOB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txtSch.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txtMob.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            studentImg.Image = System.Drawing.Image.FromStream(mstream);
+
         }
 
         private void btnIns_Click(object sender, EventArgs e)
@@ -76,8 +84,10 @@ namespace stPatricksSys
             conn.Open();
             try
             {
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO students (sname, gender, class, dob, scholarType, mob) VALUES (@name, @gen, @class, @dob, @sch, @mob)", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO students (sname, gender, class, dob, scholarType, mob, img) VALUES (@name, @gen, @class, @dob, @sch, @mob, @img)", conn);
                 int i;
+                MemoryStream mstream = new MemoryStream();
+                studentImg.Image.Save(mstream, studentImg.Image.RawFormat);
 
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
@@ -85,6 +95,7 @@ namespace stPatricksSys
                 cmd.Parameters.AddWithValue("@dob", txtDOB.Text);
                 cmd.Parameters.AddWithValue("@sch", txtSch.Text);
                 cmd.Parameters.AddWithValue("@mob", txtMob.Text);
+                cmd.Parameters.AddWithValue("@img", mstream.ToArray());
 
                 i = cmd.ExecuteNonQuery();
 
@@ -120,8 +131,10 @@ namespace stPatricksSys
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand("UPDATE students SET sname=@name, gender=@gen, class=@class, dob=@dob, scholarType=@sch, mob=@mob WHERE id=@id", conn);
+                MySqlCommand cmd = new MySqlCommand("UPDATE students SET sname=@name, gender=@gen, class=@class, dob=@dob, scholarType=@sch, mob=@mob, img=@img WHERE id=@id", conn);
                 int i;
+                MemoryStream mstream = new MemoryStream();
+                studentImg.Image.Save(mstream, studentImg.Image.RawFormat);
 
                 cmd.Parameters.AddWithValue("@id", txtID.Text);
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
@@ -130,6 +143,7 @@ namespace stPatricksSys
                 cmd.Parameters.AddWithValue("@dob", txtDOB.Text);
                 cmd.Parameters.AddWithValue("@sch", txtSch.Text);
                 cmd.Parameters.AddWithValue("@mob", txtMob.Text);
+                cmd.Parameters.AddWithValue("@img", mstream.ToArray());
 
                 i = cmd.ExecuteNonQuery();
 
@@ -235,6 +249,23 @@ namespace stPatricksSys
         private void label10_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog() { 
+                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif;*.jfif"
+            };
+            
+            if (ofd.ShowDialog() == DialogResult.OK) {
+                try
+                {
+                    studentImg.Image = System.Drawing.Image.FromFile(ofd.FileName);
+                }
+                catch (Exception) {
+                    MessageBox.Show("Error, check if you selected an image");
+                }
+            }
         }
 
         

@@ -60,15 +60,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.studentImg = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnUpload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentImg)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(381, 144);
+            this.dataGridView1.Location = new System.Drawing.Point(523, 149);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -245,7 +250,7 @@
             this.btnExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExp.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExp.ForeColor = System.Drawing.Color.White;
-            this.btnExp.Location = new System.Drawing.Point(517, 97);
+            this.btnExp.Location = new System.Drawing.Point(660, 100);
             this.btnExp.Name = "btnExp";
             this.btnExp.Size = new System.Drawing.Size(182, 30);
             this.btnExp.TabIndex = 16;
@@ -315,7 +320,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(685, 457);
+            this.textBox2.Location = new System.Drawing.Point(753, 478);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(126, 22);
             this.textBox2.TabIndex = 28;
@@ -324,7 +329,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(685, 485);
+            this.textBox1.Location = new System.Drawing.Point(753, 506);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 22);
             this.textBox1.TabIndex = 27;
@@ -333,7 +338,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(415, 462);
+            this.label9.Location = new System.Drawing.Point(483, 483);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 17);
             this.label9.TabIndex = 26;
@@ -342,7 +347,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(415, 490);
+            this.label8.Location = new System.Drawing.Point(483, 511);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 17);
             this.label8.TabIndex = 25;
@@ -358,7 +363,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(896, 79);
+            this.panel1.Size = new System.Drawing.Size(1038, 79);
             this.panel1.TabIndex = 29;
             // 
             // label12
@@ -366,7 +371,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(327, 43);
+            this.label12.Location = new System.Drawing.Point(387, 43);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(179, 30);
             this.label12.TabIndex = 3;
@@ -378,7 +383,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Right;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(871, 0);
+            this.label10.Location = new System.Drawing.Point(1013, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(25, 28);
             this.label10.TabIndex = 2;
@@ -390,7 +395,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(193, 0);
+            this.label11.Location = new System.Drawing.Point(253, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(489, 43);
             this.label11.TabIndex = 0;
@@ -402,9 +407,9 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 518);
+            this.panel2.Location = new System.Drawing.Point(0, 542);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(896, 47);
+            this.panel2.Size = new System.Drawing.Size(1038, 47);
             this.panel2.TabIndex = 30;
             // 
             // label13
@@ -412,19 +417,65 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(256, 8);
+            this.label13.Location = new System.Drawing.Point(335, 8);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(250, 30);
             this.label13.TabIndex = 2;
             this.label13.Text = "Taking up the challenge";
+            // 
+            // studentImg
+            // 
+            this.studentImg.Location = new System.Drawing.Point(348, 274);
+            this.studentImg.Name = "studentImg";
+            this.studentImg.Size = new System.Drawing.Size(158, 124);
+            this.studentImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.studentImg.TabIndex = 31;
+            this.studentImg.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(389, 220);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 17);
+            this.label14.TabIndex = 32;
+            this.label14.Text = "Upload";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(370, 251);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(102, 17);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Student Picture";
+            // 
+            // btnUpload
+            // 
+            this.btnUpload.BackColor = System.Drawing.Color.Lime;
+            this.btnUpload.FlatAppearance.BorderSize = 0;
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpload.ForeColor = System.Drawing.Color.White;
+            this.btnUpload.Location = new System.Drawing.Point(348, 404);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(158, 37);
+            this.btnUpload.TabIndex = 34;
+            this.btnUpload.Text = "Upload Image";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(896, 565);
+            this.ClientSize = new System.Drawing.Size(1038, 589);
             this.ControlBox = false;
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.studentImg);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox2);
@@ -465,6 +516,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,5 +555,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox studentImg;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnUpload;
     }
 }

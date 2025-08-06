@@ -48,14 +48,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="St Patrick's Management System.exe" size="623616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="St Patrick's Management System.exe" size="625152">
       <assemblyIdentity name="St Patrick's Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rwPPEYdh+Q1dF6mG4CklxV+8Fh/DIzUDNcABUpdwmVI=</dsig:DigestValue>
+        <dsig:DigestValue>NGGRll33C8CJlI/NIVvyr6LFJSuM+D5MOeTtg881iK4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
