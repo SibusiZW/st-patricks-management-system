@@ -14,9 +14,7 @@ using System.Windows.Forms;
 namespace stPatricksSys
 {
     public partial class Form3 : Form
-    {
-        
-        
+    {   
         MySqlConnection conn = new MySqlConnection();
         public Form3()
         {

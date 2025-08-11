@@ -48,14 +48,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stPatricksSys.exe" size="626688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stPatricksSys.exe" size="635904">
       <assemblyIdentity name="stPatricksSys" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wE6MG8q5WQEBmS+YS+ijFRG4E1Hxn3xtTsrPxok0qEs=</dsig:DigestValue>
+        <dsig:DigestValue>DRZqYLCRqc4QVn03M4Qf7BhN4ck1duliJ7sba9R7u48=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

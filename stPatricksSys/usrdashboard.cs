@@ -1,4 +1,5 @@
 ﻿using System;
+using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace stPatricksSys
 {
     public partial class usrdashboard : Form
     {
+        MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;database=school");
         public usrdashboard()
         {
             InitializeComponent();
@@ -39,6 +41,66 @@ namespace stPatricksSys
         private void label4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void loadStud()
+        {
+            conn.Open();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) FROM students;", conn);
+            int count = 0;
+
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            lblStudNum.Text = count.ToString();
+
+            conn.Close();
+        }
+
+        private void loadTr()
+        {
+            conn.Open();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) FROM teachers;", conn);
+            int count = 0;
+
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            lblTrNum.Text = count.ToString();
+
+            conn.Close();
+        }
+
+        private void loadAnc()
+        {
+            conn.Open();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) FROM anc;", conn);
+            int count = 0;
+
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            lblAncStaffNum.Text = count.ToString();
+
+            conn.Close();
+        }
+
+        private void loadPass()
+        {
+            conn.Open();
+
+            MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) FROM pass;", conn);
+            int count = 0;
+
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+            lblPassNum.Text = count.ToString();
+
+            conn.Close();
+        }
+
+        private void usrdashboard_Load(object sender, EventArgs e)
+        {
+            loadAnc();
+            loadPass();
+            loadStud();
+            loadTr();
         }
     }
 }
