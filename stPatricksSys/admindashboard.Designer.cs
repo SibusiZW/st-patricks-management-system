@@ -72,7 +72,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Brown;
-            this.button3.Location = new System.Drawing.Point(621, 302);
+            this.button3.Location = new System.Drawing.Point(589, 302);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 35);
             this.button3.TabIndex = 3;
@@ -135,7 +135,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Red;
-            this.button8.Location = new System.Drawing.Point(322, 429);
+            this.button8.Location = new System.Drawing.Point(322, 405);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(136, 35);
             this.button8.TabIndex = 8;
@@ -167,7 +167,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Brown;
-            this.button4.Location = new System.Drawing.Point(322, 174);
+            this.button4.Location = new System.Drawing.Point(322, 140);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 51);
             this.button4.TabIndex = 11;
@@ -183,7 +183,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Brown;
-            this.button2.Location = new System.Drawing.Point(621, 128);
+            this.button2.Location = new System.Drawing.Point(589, 134);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 63);
             this.button2.TabIndex = 12;
@@ -201,7 +201,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(821, 101);
+            this.panel1.Size = new System.Drawing.Size(1095, 101);
             this.panel1.TabIndex = 13;
             // 
             // label4
@@ -210,7 +210,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
             this.label4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(796, 0);
+            this.label4.Location = new System.Drawing.Point(1070, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 28);
             this.label4.TabIndex = 3;
@@ -222,7 +222,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(255, 61);
+            this.label2.Location = new System.Drawing.Point(358, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 30);
             this.label2.TabIndex = 1;
@@ -233,7 +233,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 9);
+            this.label1.Location = new System.Drawing.Point(255, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(489, 43);
             this.label1.TabIndex = 0;
@@ -247,7 +247,7 @@
             this.panel2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 470);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(821, 47);
+            this.panel2.Size = new System.Drawing.Size(1095, 47);
             this.panel2.TabIndex = 14;
             // 
             // label3
@@ -266,7 +266,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(821, 517);
+            this.ClientSize = new System.Drawing.Size(1095, 517);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

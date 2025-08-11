@@ -9,6 +9,7 @@ using System.Text;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.Types;
 
 namespace stPatricksSys
 {
@@ -55,7 +56,6 @@ namespace stPatricksSys
             txtName.Clear();
             txtGen.SelectedIndex = 0;
             txtClass.SelectedIndex = 0;
-            txtDOB.Clear();
             txtSch.SelectedIndex = 0;
             txtMob.Clear();
             studentImg.Image = null;
@@ -71,7 +71,7 @@ namespace stPatricksSys
             txtName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtGen.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtClass.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txtDOB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            dtpDOB.Value = DateTime.Parse(dataGridView1.CurrentRow.Cells[4].Value.ToString());
             txtSch.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txtMob.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             studentImg.Image = System.Drawing.Image.FromStream(mstream);
@@ -92,7 +92,7 @@ namespace stPatricksSys
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
                 cmd.Parameters.AddWithValue("@class", txtClass.Text);
-                cmd.Parameters.AddWithValue("@dob", txtDOB.Text);
+                cmd.Parameters.AddWithValue("@dob", dtpDOB.Value);
                 cmd.Parameters.AddWithValue("@sch", txtSch.Text);
                 cmd.Parameters.AddWithValue("@mob", txtMob.Text);
                 cmd.Parameters.AddWithValue("@img", mstream.ToArray());
@@ -140,7 +140,7 @@ namespace stPatricksSys
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
                 cmd.Parameters.AddWithValue("@class", txtClass.Text);
-                cmd.Parameters.AddWithValue("@dob", txtDOB.Text);
+                cmd.Parameters.AddWithValue("@dob", dtpDOB.Value);
                 cmd.Parameters.AddWithValue("@sch", txtSch.Text);
                 cmd.Parameters.AddWithValue("@mob", txtMob.Text);
                 cmd.Parameters.AddWithValue("@img", mstream.ToArray());

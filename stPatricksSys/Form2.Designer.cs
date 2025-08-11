@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtDOB = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtMob = new System.Windows.Forms.TextBox();
             this.txtGen = new System.Windows.Forms.ComboBox();
@@ -64,6 +63,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.btnUpload = new System.Windows.Forms.Button();
+            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -138,7 +138,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 251);
+            this.label7.Location = new System.Drawing.Point(43, 251);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 17);
             this.label7.TabIndex = 7;
@@ -150,13 +150,6 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(48, 25);
             this.txtID.TabIndex = 8;
-            // 
-            // txtDOB
-            // 
-            this.txtDOB.Location = new System.Drawing.Point(192, 243);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(133, 25);
-            this.txtDOB.TabIndex = 9;
             // 
             // txtName
             // 
@@ -363,7 +356,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 79);
+            this.panel1.Size = new System.Drawing.Size(1109, 79);
             this.panel1.TabIndex = 29;
             // 
             // label12
@@ -371,7 +364,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(387, 43);
+            this.label12.Location = new System.Drawing.Point(474, 43);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(179, 30);
             this.label12.TabIndex = 3;
@@ -383,7 +376,7 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Right;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(1013, 0);
+            this.label10.Location = new System.Drawing.Point(1084, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(25, 28);
             this.label10.TabIndex = 2;
@@ -395,7 +388,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(253, 0);
+            this.label11.Location = new System.Drawing.Point(340, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(489, 43);
             this.label11.TabIndex = 0;
@@ -409,7 +402,7 @@
             this.panel2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 542);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1038, 47);
+            this.panel2.Size = new System.Drawing.Size(1109, 47);
             this.panel2.TabIndex = 30;
             // 
             // label13
@@ -417,7 +410,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(335, 8);
+            this.label13.Location = new System.Drawing.Point(387, 8);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(250, 30);
             this.label13.TabIndex = 2;
@@ -425,7 +418,7 @@
             // 
             // studentImg
             // 
-            this.studentImg.Location = new System.Drawing.Point(348, 274);
+            this.studentImg.Location = new System.Drawing.Point(348, 305);
             this.studentImg.Name = "studentImg";
             this.studentImg.Size = new System.Drawing.Size(158, 124);
             this.studentImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -435,7 +428,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(389, 220);
+            this.label14.Location = new System.Drawing.Point(389, 251);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(51, 17);
             this.label14.TabIndex = 32;
@@ -444,7 +437,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(370, 251);
+            this.label15.Location = new System.Drawing.Point(370, 282);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(102, 17);
             this.label15.TabIndex = 33;
@@ -457,7 +450,7 @@
             this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpload.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(348, 404);
+            this.btnUpload.Location = new System.Drawing.Point(348, 435);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(158, 37);
             this.btnUpload.TabIndex = 34;
@@ -465,13 +458,21 @@
             this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
+            // dtpDOB
+            // 
+            this.dtpDOB.Location = new System.Drawing.Point(128, 245);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(217, 25);
+            this.dtpDOB.TabIndex = 35;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1038, 589);
+            this.ClientSize = new System.Drawing.Size(1109, 589);
             this.ControlBox = false;
+            this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -493,7 +494,6 @@
             this.Controls.Add(this.txtGen);
             this.Controls.Add(this.txtMob);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.txtDOB);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -533,7 +533,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtMob;
         private System.Windows.Forms.ComboBox txtGen;
@@ -559,5 +558,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.DateTimePicker dtpDOB;
     }
 }
