@@ -84,11 +84,15 @@ namespace stPatricksSys
             conn.Open();
             try
             {
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO students (sname, gender, class, dob, scholarType, mob, img) VALUES (@name, @gen, @class, @dob, @sch, @mob, @img)", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO students (id, sname, gender, class, dob, scholarType, mob, img) VALUES (@id ,@name, @gen, @class, @dob, @sch, @mob, @img)", conn);
                 int i;
                 MemoryStream mstream = new MemoryStream();
                 studentImg.Image.Save(mstream, studentImg.Image.RawFormat);
+                Random rand = new Random();
+                int randomNum = rand.Next(1, 60);
+                string id = txtClass.Text + randomNum.ToString();
 
+                cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
                 cmd.Parameters.AddWithValue("@class", txtClass.Text);

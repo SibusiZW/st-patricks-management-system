@@ -16,7 +16,7 @@ namespace stPatricksSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new usrdashboard());
+            Application.Run(new Form3());
         }
     }
 }
