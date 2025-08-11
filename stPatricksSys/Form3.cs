@@ -104,7 +104,7 @@ namespace stPatricksSys
 
                 if (i > 0)
                 {
-                    MessageBox.Show("Record saved succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(id + " saved succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {

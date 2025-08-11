@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pass));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtType = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -40,6 +40,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtGivenTo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtIssuedBy = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -55,12 +59,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter type of pass\r\n      Clinic or Gate";
             // 
-            // textBox1
+            // txtType
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 29);
-            this.textBox1.TabIndex = 1;
+            this.txtType.Location = new System.Drawing.Point(70, 165);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(185, 29);
+            this.txtType.TabIndex = 1;
             // 
             // button1
             // 
@@ -69,7 +73,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(70, 295);
+            this.button1.Location = new System.Drawing.Point(70, 358);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(72, 34);
             this.button1.TabIndex = 2;
@@ -84,7 +88,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(183, 295);
+            this.button2.Location = new System.Drawing.Point(183, 358);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 34);
             this.button2.TabIndex = 3;
@@ -174,6 +178,42 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Taking up the challenge";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(12, 225);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 21);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Given to:";
+            // 
+            // txtGivenTo
+            // 
+            this.txtGivenTo.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGivenTo.Location = new System.Drawing.Point(121, 221);
+            this.txtGivenTo.Name = "txtGivenTo";
+            this.txtGivenTo.Size = new System.Drawing.Size(149, 25);
+            this.txtGivenTo.TabIndex = 33;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Lime;
+            this.label6.Location = new System.Drawing.Point(12, 291);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 21);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Issued By:";
+            // 
+            // txtIssuedBy
+            // 
+            this.txtIssuedBy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIssuedBy.Location = new System.Drawing.Point(121, 287);
+            this.txtIssuedBy.Name = "txtIssuedBy";
+            this.txtIssuedBy.Size = new System.Drawing.Size(149, 25);
+            this.txtIssuedBy.TabIndex = 35;
+            // 
             // pass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -181,12 +221,16 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(766, 467);
             this.ControlBox = false;
+            this.Controls.Add(this.txtIssuedBy);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtGivenTo);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtType);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -209,7 +253,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
@@ -219,5 +263,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtGivenTo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtIssuedBy;
     }
 }

@@ -31,16 +31,21 @@ namespace stPatricksSys
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO pass (purpose) VALUES (@type)", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO pass (id, purpose, givenTo, issuedBy) VALUES (@id, @type, @gt, @ib)", conn);
                 int i;
+                Random rand = new Random();
+                string id = "P" + rand.Next(1, 100).ToString();
 
-                cmd.Parameters.AddWithValue("@type", textBox1.Text);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@type", txtType.Text);
+                cmd.Parameters.AddWithValue("@gt", txtGivenTo.Text);
+                cmd.Parameters.AddWithValue("@ib", txtIssuedBy.Text);
 
                 i = cmd.ExecuteNonQuery();
 
                 if (i > 0)
                 {
-                    MessageBox.Show("Pass provided succesfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(id + " provided succesfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -85,7 +90,9 @@ namespace stPatricksSys
             {
                 conn.Close();
             }
-            textBox1.Clear();
+            txtType.Clear();
+            txtGivenTo.Clear();
+            txtIssuedBy.Clear();
         }
 
         private void label4_Click(object sender, EventArgs e)
