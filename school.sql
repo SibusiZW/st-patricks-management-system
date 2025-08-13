@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2025 at 01:40 PM
+-- Generation Time: Aug 13, 2025 at 02:47 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -85,7 +85,8 @@ CREATE TABLE `passsubsys` (
 --
 
 INSERT INTO `passsubsys` (`id`, `user`, `password`, `reg_date`) VALUES
-(1, 'Tafadzwa', '12345', '2025-08-11');
+(1, 'Tafadzwa', '12345', '2025-08-11'),
+(3, 'Sibanda', '1234', '2025-08-12');
 
 -- --------------------------------------------------------
 
@@ -208,7 +209,7 @@ ALTER TABLE `anc`
 -- AUTO_INCREMENT for table `passsubsys`
 --
 ALTER TABLE `passsubsys`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
