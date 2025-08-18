@@ -44,10 +44,10 @@
             this.panelbtm = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.lblStudNum = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblTrNum = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -282,6 +282,17 @@
             this.panel3.Size = new System.Drawing.Size(200, 63);
             this.panel3.TabIndex = 15;
             // 
+            // lblStudNum
+            // 
+            this.lblStudNum.AutoSize = true;
+            this.lblStudNum.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudNum.ForeColor = System.Drawing.Color.White;
+            this.lblStudNum.Location = new System.Drawing.Point(86, 35);
+            this.lblStudNum.Name = "lblStudNum";
+            this.lblStudNum.Size = new System.Drawing.Size(23, 27);
+            this.lblStudNum.TabIndex = 2;
+            this.lblStudNum.Text = "0";
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -292,17 +303,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 32);
             this.panel4.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(69, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Students";
             // 
             // label6
             // 
@@ -315,16 +315,16 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Students";
             // 
-            // lblStudNum
+            // label5
             // 
-            this.lblStudNum.AutoSize = true;
-            this.lblStudNum.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudNum.ForeColor = System.Drawing.Color.White;
-            this.lblStudNum.Location = new System.Drawing.Point(86, 35);
-            this.lblStudNum.Name = "lblStudNum";
-            this.lblStudNum.Size = new System.Drawing.Size(23, 27);
-            this.lblStudNum.TabIndex = 2;
-            this.lblStudNum.Text = "0";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(69, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Students";
             // 
             // panel5
             // 
