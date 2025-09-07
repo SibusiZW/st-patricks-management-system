@@ -1,6 +1,6 @@
 ﻿namespace stPatricksSys
 {
-    partial class Form5
+    partial class ancillary
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ancillary));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnExp = new System.Windows.Forms.Button();
@@ -317,7 +317,7 @@
             this.btnIns.UseVisualStyleBackColor = false;
             this.btnIns.Click += new System.EventHandler(this.btnIns_Click);
             // 
-            // Form5
+            // ancillary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -347,7 +347,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form5";
+            this.Name = "ancillary";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ancillary Staff Records";
             this.Load += new System.EventHandler(this.Form5_Load);

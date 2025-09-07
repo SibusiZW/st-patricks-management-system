@@ -1,5 +1,4 @@
 c:\users\tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.csprojResolveAssemblyReference.cache
-c:\users\tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form1.resources
 c:\users\tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Properties.Resources.resources
 c:\users\tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.csproj.GenerateResource.Cache
 c:\users\tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.confirm.resources
@@ -7,13 +6,8 @@ C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricks
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.adminlogin.resources
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.admindashboard.resources
 C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.usrdashboard.resources
-C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form2.resources
-C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form3.resources
-C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form4.resources
-C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form5.resources
 C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.pass.resources
 C:\Users\Tafadzwa\documents\visual studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.users.resources
-C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.Form6.resources
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.exe.config
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.exe.manifest
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\bin\Debug\stPatricksSys.application
@@ -23,3 +17,9 @@ C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricks
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.application
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.exe
 C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.pdb
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.splash.resources
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.usrStudents.resources
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.adminstudents.resources
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.teachers.resources
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.ancillary.resources
+C:\Users\Tafadzwa\Documents\Visual Studio 2012\Projects\stPatricksSys\stPatricksSys\obj\Debug\stPatricksSys.regUsers.resources

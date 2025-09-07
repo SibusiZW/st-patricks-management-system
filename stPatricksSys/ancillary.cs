@@ -1,38 +1,30 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using MySql.Data.MySqlClient;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.Types;
 
 namespace stPatricksSys
 {
-    public partial class Form2 : Form
+    public partial class ancillary : Form
     {
         MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;database=school");
-        public Form2()
+        public ancillary()
         {
             InitializeComponent();
         }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            load_data();
-            txtID.ReadOnly = true;
-        }
         private void load_data()
         {
-            
+            conn.Close();
+            conn.Open();
             try
             {
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM students", conn);
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM anc", conn);
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
 
@@ -55,27 +47,15 @@ namespace stPatricksSys
             txtID.Clear();
             txtName.Clear();
             txtGen.SelectedIndex = 0;
-            txtClass.SelectedIndex = 0;
-            txtSch.SelectedIndex = 0;
-            txtMob.Clear();
-            studentImg.Image = null;
+            txtDep.SelectedIndex = 0;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //studentImg.Image?.Dispose();
-            byte[] imageBytes = (byte[])dataGridView1.CurrentRow.Cells[7].Value;
-            MemoryStream mstream = new MemoryStream(imageBytes);
-
             txtID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtGen.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtClass.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            dtpDOB.Value = DateTime.Parse(dataGridView1.CurrentRow.Cells[4].Value.ToString());
-            txtSch.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            txtMob.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            studentImg.Image = System.Drawing.Image.FromStream(mstream);
-
+            txtDep.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void btnIns_Click(object sender, EventArgs e)
@@ -84,28 +64,18 @@ namespace stPatricksSys
             conn.Open();
             try
             {
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO students (id, sname, gender, class, dob, scholarType, mob, img) VALUES (@id ,@name, @gen, @class, @dob, @sch, @mob, @img)", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO anc (aname, gender, dep) VALUES (@name, @gen, @dep)", conn);
                 int i;
-                MemoryStream mstream = new MemoryStream();
-                studentImg.Image.Save(mstream, studentImg.Image.RawFormat);
-                Random rand = new Random();
-                int randomNum = rand.Next(1, 60);
-                string id = txtClass.Text + randomNum.ToString();
 
-                cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
-                cmd.Parameters.AddWithValue("@class", txtClass.Text);
-                cmd.Parameters.AddWithValue("@dob", dtpDOB.Value);
-                cmd.Parameters.AddWithValue("@sch", txtSch.Text);
-                cmd.Parameters.AddWithValue("@mob", txtMob.Text);
-                cmd.Parameters.AddWithValue("@img", mstream.ToArray());
+                cmd.Parameters.AddWithValue("@dep", txtDep.Text);
 
                 i = cmd.ExecuteNonQuery();
 
                 if (i > 0)
                 {
-                    MessageBox.Show(id + " saved succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Record saved succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -117,7 +87,8 @@ namespace stPatricksSys
             {
                 MessageBox.Show(ex.Message);
             }
-            finally {
+            finally
+            {
                 conn.Close();
             }
             load_data();
@@ -135,19 +106,13 @@ namespace stPatricksSys
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand("UPDATE students SET sname=@name, gender=@gen, class=@class, dob=@dob, scholarType=@sch, mob=@mob, img=@img WHERE id=@id", conn);
+                MySqlCommand cmd = new MySqlCommand("UPDATE anc SET aname=@name, gender=@gen, dep=@dep WHERE id=@id", conn);
                 int i;
-                MemoryStream mstream = new MemoryStream();
-                studentImg.Image.Save(mstream, studentImg.Image.RawFormat);
 
                 cmd.Parameters.AddWithValue("@id", txtID.Text);
                 cmd.Parameters.AddWithValue("@name", txtName.Text);
                 cmd.Parameters.AddWithValue("@gen", txtGen.Text);
-                cmd.Parameters.AddWithValue("@class", txtClass.Text);
-                cmd.Parameters.AddWithValue("@dob", dtpDOB.Value);
-                cmd.Parameters.AddWithValue("@sch", txtSch.Text);
-                cmd.Parameters.AddWithValue("@mob", txtMob.Text);
-                cmd.Parameters.AddWithValue("@img", mstream.ToArray());
+                cmd.Parameters.AddWithValue("@dep", txtDep.Text);
 
                 i = cmd.ExecuteNonQuery();
 
@@ -165,7 +130,8 @@ namespace stPatricksSys
             {
                 MessageBox.Show(ex.Message);
             }
-            finally {
+            finally
+            {
                 conn.Close();
             }
             load_data();
@@ -178,7 +144,7 @@ namespace stPatricksSys
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand("DELETE FROM students WHERE id=@id", conn);
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM anc WHERE id=@id", conn);
                 int i;
 
                 cmd.Parameters.AddWithValue("@id", txtID.Text);
@@ -199,7 +165,8 @@ namespace stPatricksSys
             {
                 MessageBox.Show(ex.Message);
             }
-            finally {
+            finally
+            {
                 conn.Close();
             }
             load_data();
@@ -209,21 +176,16 @@ namespace stPatricksSys
         private void btnExt_Click(object sender, EventArgs e)
         {
             this.Close();
-            usrdashboard newform = new usrdashboard();
+            admindashboard newform = new admindashboard();
             newform.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                "sname like'%" + textBox1.Text + "%'";
+                "aname like '%" + textBox1.Text + "%'";
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-                "class like '%" + textBox2.Text + "%'";
-        }
 
         private void btnExp_Click(object sender, EventArgs e)
         {
@@ -247,31 +209,13 @@ namespace stPatricksSys
             xlr.Select();
 
             xlSheet.PasteSpecial(Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            
+
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void Form5_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            load_data();
+            txtID.ReadOnly = true;
         }
-
-        private void btnUpload_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog() { 
-                Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif;*.jfif"
-            };
-            
-            if (ofd.ShowDialog() == DialogResult.OK) {
-                try
-                {
-                    studentImg.Image = System.Drawing.Image.FromFile(ofd.FileName);
-                }
-                catch (Exception) {
-                    MessageBox.Show("Error, check if you selected an image");
-                }
-            }
-        }
-
-        
     }
 }

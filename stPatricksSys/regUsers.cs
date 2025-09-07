@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace stPatricksSys
 {
-    public partial class Form6 : Form
+    public partial class regUsers : Form
     {
         MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;database=school");
-        public Form6()
+        public regUsers()
         {
             InitializeComponent();
         }

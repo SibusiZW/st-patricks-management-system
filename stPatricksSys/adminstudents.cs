@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace stPatricksSys
 {
-    public partial class Form3 : Form
+    public partial class adminstudents : Form
     {   
         MySqlConnection conn = new MySqlConnection();
-        public Form3()
+        public adminstudents()
         {
             InitializeComponent();
             MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
@@ -115,6 +115,10 @@ namespace stPatricksSys
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            catch (NullReferenceException)
+            { 
+                MessageBox.Show("Please select the child's image");
             }
             finally
             {

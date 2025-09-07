@@ -34,7 +34,7 @@ namespace stPatricksSys
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form2 form = new Form2();
+            usrStudents form = new usrStudents();
             form.Show();
         }
 

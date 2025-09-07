@@ -27,14 +27,14 @@ namespace stPatricksSys
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form3 newform = new Form3();
+            adminstudents newform = new adminstudents();
             newform.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form4 newform = new Form4();
+            teachers newform = new teachers();
             newform.Show();
         }
 
@@ -53,7 +53,7 @@ namespace stPatricksSys
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form5 newform = new Form5();
+            ancillary newform = new ancillary();
             newform.Show();
         }
 
@@ -74,7 +74,7 @@ namespace stPatricksSys
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form6 newform = new Form6();
+            regUsers newform = new regUsers();
             newform.Show();
         }
 
